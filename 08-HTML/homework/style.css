@@ -17,3 +17,8 @@ img{
     font-size: 18px;
     margin: 50px;
 }
+
+.image-fondo{
+    background-image: url(/home/horacio/Escritorio/Curso.Prep.Henry/08-HTML/img/fondopagina.jpg);
+    background-size: cover;
+}
