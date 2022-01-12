@@ -64,5 +64,23 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 /* Ejercicio 7. */
 #ejercicioSiete{
                 display: flex;
-                
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+}
+
+#elementoUno{
+                align-self: flex-start;
+}
+
+#elementoDos{
+                align-self: center;
+}
+
+#elementoTres{
+                align-self: flex-start;
+}
+
+#elementoCuatro{
+                align-self: flex-end;
 }
