@@ -131,7 +131,7 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  return Math.pow(num, 4);
+  return num**2;
 }
 
 function elevarAlCubo(num) {
@@ -151,7 +151,7 @@ function elevar(num, exponent) {
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  return num.toFixed(2);
+  return Math.round(num);
 }
 
 function redondearHaciaArriba(num) {
@@ -173,16 +173,11 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  var numsigno = Math.sign(numero);
-  if (numsigno = 1) {
-    return "Es Positivo";
-  } else
-  {
-    if (numsigno = -1) {
-      return "Es Negativo";    
-  } else  
-  {
-  if (numero = 0);
+  if (numero > 0) {
+    return "Es positivo"
+  } else if (numero < 0) {
+      return "Es negativo"   
+  } else if (numero === 0) {
   return false;
   }    
 }
@@ -262,7 +257,6 @@ function esVocal(letra){
         } else {
       return "Es vocal";
     }
-  }
 }
 
 
