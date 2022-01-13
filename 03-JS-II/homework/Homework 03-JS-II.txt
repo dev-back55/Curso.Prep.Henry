@@ -1,0 +1,6 @@
+﻿1.
+Definiciones 
+for :  es una instrucción que nos permite ejecutar un bucle, es decir, mientras se cumpla una condición se ejecuta el código que corresponda. Cuando la condición ya no se cumple se detiene el bucle.
+
+
+&&, ||, ! : son operadores lógicos que nos permiten combinar expresiones de igualdad y nos devuelven un verdadero o falso.
