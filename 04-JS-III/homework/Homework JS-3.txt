@@ -1,0 +1,11 @@
+﻿Homework JS-III
+
+
+Array: es una variable contenedora de datos que se almacenan en una matriz. Puede contener cualquier tipo de dato sea strings (cadena carácteres), número o booleano.
+
+
+ejemplos:
+tabla = [1, 2, 3, 4, 5] // contiene los números del 1 al 5
+
+
+nombres=[“juan”, “horacio”, “maria”, “nicolas”] // contiene cuatro nombres de personas
