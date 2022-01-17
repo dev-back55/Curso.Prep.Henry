@@ -1,0 +1,29 @@
+﻿Homework: Javascript IV
+Conceptos
+
+
+Objetos: es un contenedor de datos, similar a los arrays, sobre una sola cosa (objeto). Por ejemplo, si queremos guardar datos de una persona (objeto) podemos guardar su nombre, edad, domicilio, teléfono, etc, estos datos son las propiedades de dicho objeto. Los objetos se declaran usando llaves {}.
+Ejemplo:
+
+
+usuarios = {
+        nombre: “juan”,
+        edad: 25,
+        domicilio: “tucuman 16”,
+}
+
+
+En este ejemplo una propiedad es “nombre” y su valor es “juan”.
+
+
+Propiedades: Una propiedad es una asociación entre un nombre (o clave) y un valor. En el ejemplo anterior una propiedad es “edad” y su valor es “25”.
+
+
+Métodos: En los objetos, los valores se pueden establecer en funciones. Las funciones guardadas en un objeto se denominan métodos.
+
+
+Bucle for…in: nos permite iterar sobre cada par clave-valor del objeto, es un tipo de bucle for integrado llamado “for … in loop”. Es una sintaxis ligeramente diferente, comienza igual pero entre paréntesis declararemos una variable, la palabra clave in y el nombre del objeto. Esto recorrerá cada clave del objeto y finalizará cuando se hayan iterado todas las claves.
+
+
+Notación de puntos vs notación de corchetes: son dos formas de sintaxis para acceder o indicar que propiedad voy a utilizar, para modificar, mostrar etc. 
+La notación de puntos es más abreviada en su escritura, ejemplo para sacar la propiedad “nombre” del objeto “usuarios” sería:  usuarios.nombre y me devuelve “juan”.
