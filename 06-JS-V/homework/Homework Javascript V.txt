@@ -1,0 +1,28 @@
+﻿Homework: Javascript V
+Conceptos
+
+
+prototype: son métodos (funciones) establecidas para las clases, cada clase tiene una propiedad prototype, que luego podemos establecer en métodos. Los prototype nos ayudan a ahorrar el uso de la memoria del computador.
+Los métodos de prototype tienen acceso a la palabra clave this y, al igual que antes, siempre apuntará al objeto (a la izquierda del punto) que lo está llamando.
+Ejemplo:
+function Usuario(nombre, github) {
+   this.nombre = nombre;
+   this.github = github;
+}
+
+
+Usuario.prototype.introduccion = function(){
+   return 'Mi nombre es ' + this.nombre + ', mi usuario de Github es ' + this.github + '.';
+}
+
+
+let juan = new Usuario('Juan', 'juan.perez');
+let antonio = new Usuario('Antonio', 'atralice');
+
+
+console.log(juan.introduccion()); // Mi nombre es Juan, mi usuario de Github es juan.perez.
+console.log(antonio.introduccion()); // Mi nombre es Antonio, mi usuario de Github es atralice.
+
+
+Constructors (de Clases): es el método especial para crear e inicializar un objeto creado con una extensión class.
+Solo puede haber un método especial con el nombre “constructor” en una clase.
