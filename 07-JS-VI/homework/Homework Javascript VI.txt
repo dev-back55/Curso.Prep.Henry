@@ -1,0 +1,17 @@
+﻿Homework: Javascript VI
+Conceptos
+
+
+Funciones CALLBACK: son funciones que aceptan como argumento a otra función. Pueden llamarse en cualquier momento y pasar argumentos dentro de la función. La convención es usar cb como argumento para la variable que se usará de callback.
+Ejemplo:
+function decirHolaUsuario(usuario) {
+        return “Hola “ + usuario + “!”;
+}
+
+
+funtion crearSaludo(usuario, cb) {
+        return cb(usuario);
+}
+
+
+crearSaludo(“Horacio”, decirHolaUsuario);  // retorna:  Hola Horacio!
