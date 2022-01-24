@@ -28,10 +28,11 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  var newarray =[];
   for (let i = 0; i < array.length; i++) {
-    array[i] = array[i] + 1;
+    newarray[i] = array[i] + 1;
   }
-    return array;
+    return newarray;
 }
 
 
@@ -82,15 +83,19 @@ function arrayContiene(array, elemento) {
 function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
-  // Tu código:
-  // otro: return numeros.reduce()
-  total = 0
+  //
+  // Tu código: los habia hecho con for pero cuando entendi mejor el reduce lo hice asi.
+  var totales = 0;
+  const sumar = (acc, b) => acc + b;
+  totales = numeros.reduce(sumar, 0);
+  return totales;
+  /*total = 0
   for (let i = 0; i < numeros.length; i++) {
     total = total + numeros[i];
   }
   return total;
+*/
 }
-
 
 function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
@@ -104,8 +109,10 @@ function promedioResultadosTest(resultadosTest) {
   promedio = suma / resultadosTest.length
   return promedio
 }
-
-
+/* otra solucion es usar la funcion anterior que suma el array
+return agregarNumeros(resultadosTest) / resultadosTest.length;
+-- esta es una version mas corta
+*/
 function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
